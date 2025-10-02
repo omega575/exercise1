@@ -1,0 +1,10 @@
+<h2>People</h2>
+<div class="pill-group">
+    @for (person of people; track person.personId) {
+    <li>
+        <a routerLink="/details/{{person.personId}}" class="pill">
+            <span (click)="something(person)">{{ person.name }}</span>
+        </a>
+    </li>
+    }
+</div>
