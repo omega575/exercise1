@@ -194,3 +194,4 @@ C:\Users\brndb\Downloads\tech_review-main-2\tech_review-main\tech_exercise_v.0.0
 C:\Users\brndb\Downloads\tech_review-main-2\tech_review-main\tech_exercise_v.0.0.4\tech_exercise\package\exercise1\StargateTests\obj\Debug\net8.0\StargateTests.pdb
 C:\Users\brndb\Downloads\tech_review-main-2\tech_review-main\tech_exercise_v.0.0.4\tech_exercise\package\exercise1\StargateTests\obj\Debug\net8.0\StargateTests.genruntimeconfig.cache
 C:\Users\brndb\Downloads\tech_review-main-2\tech_review-main\tech_exercise_v.0.0.4\tech_exercise\package\exercise1\StargateTests\obj\Debug\net8.0\ref\StargateTests.dll
+C:\Users\brndb\Downloads\tech_review-main-2\tech_review-main\tech_exercise_v.0.0.4\tech_exercise\package\exercise1\StargateTests\obj\Debug\net8.0\StargateTests.sourcelink.json

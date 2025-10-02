@@ -11,6 +11,6 @@ export const DUTIES: AstronautDuty[] = [
 ];
 
 export const PEOPLE: Person[] = [
-    { personId: 1, name: "John Doe", detail: DETAILS[0], duties: DUTIES },
+    { personId: 1, name: "John Doe" },
     { personId: 2, name: "Jane Doe" }
 ];

@@ -4,6 +4,8 @@ import { AstronautDuty } from "./astronautDuty";
 export interface Person {
     personId: number;
     name: string;
-    detail?: AstronautDetail
-    duties?: AstronautDuty[];
+    currentRank?: string;
+    currentDutyTitle?: string;
+    careerStartDate?: Date;
+    careerEndDate?: Date
 }

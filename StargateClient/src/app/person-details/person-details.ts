@@ -22,4 +22,10 @@ export class PersonDetails implements OnInit {
     const id = parseInt(this.route.snapshot.paramMap.get('id')!, 10);
     this.peopleService.getPersonById(id).subscribe(response => this.person = response.person);
   }
+
+  save(): void {
+    if (this.person) {
+      this.peopleService.updatePerson(this.person).subscribe();
+    }
+  }
 }

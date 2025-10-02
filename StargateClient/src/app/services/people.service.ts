@@ -5,6 +5,7 @@ import { Injectable } from "@angular/core";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { GetPeopleResponse } from "../models/http/getPeopleResponse";
 import { GetPersonResponse } from "../models/http/getPersonResponse";
+import { UpdatePersonRequest } from "../models/http/updatePersonRequest";
 
 @Injectable({ providedIn: 'root' })
 export class PeopleService {
@@ -34,5 +35,15 @@ export class PeopleService {
         return this.http.get<GetPersonResponse>(url).pipe(tap(response => {
             console.log(response);
         }));
+    }
+
+    updatePerson(person: Person): Observable<any> {
+        var request: UpdatePersonRequest = {
+            id: person.personId,
+            rank: person.currentRank,
+            title: person.currentDutyTitle,
+            name: person.name
+        }
+        return this.http.put(this.apiUrl, request, this.httpOptions).pipe(tap(result => console.log(result)));
     }
 }

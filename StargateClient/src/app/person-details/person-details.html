@@ -1,3 +1,15 @@
 <div *ngIf="person">
-    <h2>{{person.name | uppercase }}</h2>
+    <label for="person-name">Name: </label>
+    <input [(ngModel)]="person.name" id="person-name" placeholder="Person name">
+
+    <label for="person-rank">Rank: </label>
+    <input [(ngModel)]="person.currentRank" id="person-rank" placeholder="Person rank">
+
+    <label for="person-title">Title: </label>
+    <input [(ngModel)]="person.currentDutyTitle" id="person-title" placeholder="Person title">
+
+    <label for="person-start-date">Start Date: </label>
+    <input [(ngModel)]="person.careerStartDate" id="person-start-date" placeholder="Person start date">
+
+    <button type="button" (click)="save()">Save</button>
 </div>
